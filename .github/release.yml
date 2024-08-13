@@ -1,0 +1,15 @@
+# 複数のカテゴリのラベルを使用すると一番上のが優先される？
+changelog:
+  categories:            # リリースノートのカテゴリ設定
+    - title: Enhancement # リリースノートへ「Enhancement」というカテゴリを作成する
+      labels:
+        - enhancement    # 「Enhancement」へ掲載するプルリクエストのラベルを指定する
+    - title: Bug Fixes
+      labels:            # プルリクエストのラベルは複数定義できる
+        - bug
+        - fixes
+  exclude:
+    labels:
+      - dependencies
+    authors:
+      - dependabot
